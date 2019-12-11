@@ -1,0 +1,4 @@
+(executable
+ (name puzzle)
+ (public_name puzzle_1)
+ (libraries fmt fmt.tty lib logs logs.fmt logs.cli))

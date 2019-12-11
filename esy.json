@@ -1,0 +1,32 @@
+{
+  "name": "advent-of-code-2019-reason-native",
+  "version": "0.1.0",
+  "description": "Advent of Code 2019 in Reason Native uing Esy",
+  "license": "MIT",
+  "esy": {
+    "build": "refmterr dune build -p #{self.name}",
+    "NOTE": "Optional release Section. Customizes result of `esy release`",
+    "release": {
+      "bin": ["aoc2019"]
+    },
+    "buildEnv": {
+      "ODOC_SYNTAX": "re"
+    }
+  },
+  "scripts": {
+    "run": "esy x aoc2019"
+  },
+  "dependencies": {
+    "@esy-ocaml/reason": ">= 3.4.0 < 3.6.0",
+    "@opam/dune": "*",
+    "@opam/fmt": "*",
+    "@opam/logs": "0.6.3",
+    "ocaml": "~4.8.1000",
+    "refmterr": "*"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "ocaml": "~4.8.1000",
+    "@opam/odoc": "*"
+  }
+}
